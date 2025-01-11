@@ -1,5 +1,5 @@
 # Use an official Python image
-FROM python:3.10-slim
+FROM python:3.13-slim
 
 # Install Poetry
 RUN pip install poetry
@@ -11,7 +11,7 @@ WORKDIR /app
 COPY pyproject.toml poetry.lock /app/
 
 # Install dependencies without creating a virtual environment
-RUN poetry config virtualenvs.create false && poetry install --no-interaction --no-ansi
+RUN poetry config virtualenvs.create false && poetry install --no-root --no-interaction --no-ansi
 
 # Copy the rest of the project files
 COPY . /app/
