@@ -13,8 +13,14 @@ COPY pyproject.toml poetry.lock /app/
 # Install dependencies without creating a virtual environment
 RUN poetry config virtualenvs.create false && poetry install --no-root --no-interaction --no-ansi
 
+# Install pytest
+RUN poetry add --dev pytest
+
 # Copy the rest of the project files
 COPY . /app/
+
+# Run tests
+RUN poetry run pytest
 
 # Command to run the inference script
 CMD ["poetry", "run", "python", "src/inference.py"]
