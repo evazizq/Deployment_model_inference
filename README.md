@@ -43,7 +43,7 @@ Before running the project, ensure you have the following installed:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/iair/deployment_model_inference.git
+   git clone https://github.com/evazizq/deployment_model_inference.git
    cd deployment_model_inference
    ```
 
