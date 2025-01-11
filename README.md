@@ -1,6 +1,6 @@
 ---
 title: Deployment Model Inference
-description: This model helps predict heart attack cases based on patient data detailed in the dataset, such as age, gender, activity levels, cholesterol levels, etc.
+description: This model helps to predict heart attack cases based on patient data detailed in the dataset, such as age, gender, activity levels, cholesterol levels, etc.
 ---
 
 # Deployment Model Inference
@@ -71,19 +71,19 @@ Before running the project, ensure you have the following installed:
 The script expects input data in the following format:
 ```python
 input_data = {
-    "age": int,
-    "sex": int,
-    "cp": int,
-    "trestbps": int,
-    "chol": int,
-    "fbs": int,
-    "restecg": int,
-    "thalach": int,
-    "exang": int,
-    "oldpeak": float,
-    "slope": int,
-    "ca": float,
-    "thal": float
+    "age": 52,
+    "sex": 1,
+    "cp": 0,
+    "trestbps": 125,
+    "chol": 212,
+    "fbs": 0,
+    "restecg": 1,
+    "thalach": 168,
+    "exang": 0,
+    "oldpeak": 1,
+    "slope": 2,
+    "ca": 2,
+    "thal": 3
 }
 ```
 
